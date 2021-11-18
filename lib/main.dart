@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
   int oScore = 0;
   int xScore = 0;
   int filledBoxes = 0;
-   static var myFont = GoogleFonts.shareTechMono(textStyle: const TextStyle(color: Colors.black, letterSpacing: 3));
+  static var myFont = GoogleFonts.shareTechMono(textStyle: const TextStyle(color: Colors.black, letterSpacing: 3));
   static var myFontWhite =
       GoogleFonts.shareTechMono(textStyle: const TextStyle(color: Colors.white, letterSpacing: 3, fontSize: 25));
   @override
