@@ -23,7 +23,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<String> displayXO = [
+  List<String> displayXO = <String>[
     '',
     '',
     '',
@@ -38,9 +38,9 @@ class _HomePageState extends State<HomePage> {
   int oScore = 0;
   int xScore = 0;
   int filledBoxes = 0;
-  static var myFont =
+  static TextStyle myFont =
       GoogleFonts.shareTechMono(textStyle: const TextStyle(color: Colors.black, letterSpacing: 3, fontSize: 25));
-  static var myFontWhite =
+  static TextStyle myFontWhite =
       GoogleFonts.shareTechMono(textStyle: const TextStyle(color: Colors.white, letterSpacing: 3, fontSize: 25));
   @override
   Widget build(BuildContext context) {
@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
                     padding: const EdgeInsets.all(30.0),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: <Widget>[
                         Text(
                           'Player X',
                           style: myFontWhite,
@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                     padding: const EdgeInsets.all(30.0),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: <Widget>[
                         Text(
                           'Player 0',
                           style: myFontWhite,
@@ -184,7 +184,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _showDrawDialog() {
-    showDialog(
+    showDialog<void>(
         barrierDismissible: false,
         context: context,
         builder: (BuildContext context) {
@@ -203,12 +203,12 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _showWinDialog(String winner) {
-    showDialog(
+    showDialog<void>(
         barrierDismissible: false,
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text('Winner is: ' + winner),
+            title: Text('Winner is: $winner'),
             actions: <Widget>[
               TextButton(
                   child: const Text('Play again!'),
