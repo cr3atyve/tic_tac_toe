@@ -20,7 +20,7 @@ A TicTacToe multiplayer game developed in Dart
 
 ## Other Resources
 
-A few resources to get you started if this is your first Flutter project:![Uploading Screenshot_9.png…]()
+A few resources to get you started if this is your first Flutter project:
 
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
